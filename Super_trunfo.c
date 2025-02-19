@@ -13,7 +13,7 @@ printf("Digite o nome do estado: \n");
 scanf("%d", &estado1);
 
 printf("Digite o nome da cidade: \n");
-scanf("%s", &nome1);
+scanf("%f", &nome1);
 
 printf("Digite a população: \n");
 scanf("%d", &populacao1);
