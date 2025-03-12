@@ -3,8 +3,8 @@
 int main(){
     char estado[100], estd[100];
     char cidade[100], cdd[100];
-    float populacao, area, pib, pontos, pplc, ar, pb, pnts;
-
+    float populacao, area, pib, pontos, pplc, ar, pb, pnts, densidade, dnsdd, renda, rnd;
+        
     printf(" *** CARTA 1***\n");
 
     printf("Digite o nome do estado 1:\n");
@@ -45,12 +45,20 @@ int main(){
     printf("Digite o número de pontos turísticos da cidade 2: \n");
     scanf("%f", &pontos);
 
+    densidade = pplc/ar;
+    dnsdd = populacao/area;
+    renda = pb/pplc;
+    rnd = pib/populacao;
+
+
     printf("O nome do estado da primeira carta é: %s \n", estd);
     printf("O nome da cidade da primeira carta é: %s \n", cdd);
     printf("A populaçao da cidade da primeira carta é: %.2f \n", pplc);
     printf("A área da cidade da primeira carta é: %.2f \n", ar);
     printf("O PIB da cidade da primeira carta é: %.2f \n", pb);
     printf("O número de pontos turísticos da cidade da primeira carta é: %.2f \n", pnts);
+    printf("A densidade da cidade da primeira carta é: %.2f \n", densidade);
+    printf("A renda per capita da cidade da primeira carta é: %.2f \n", renda);
 
     printf("O nome do estado da segunda carta é: %s \n", estado);
     printf("O nome da cidade da segunda carta é: %s \n", cidade);
@@ -58,7 +66,8 @@ int main(){
     printf("A área da cidade da segunda carta é: %.2f \n", area);
     printf("O PIB da cidade da segunda carta é: %.2f \n", pib);
     printf("O número de pontos turísticos da cidade da segunda carta é: %.2f \n", pontos);
-
+    printf("A densidade da cidade da segunda carta é: %.2f \n", dnsdd);
+    printf("A renda per capita da cidade da segunda carta é: %.2f \n", rnd);
 
 
     return 0;
